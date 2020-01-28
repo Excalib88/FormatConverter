@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
+using FormatConverter.Abstractions;
+using FormatConverter.Core.Services;
+using FormatConverter.DataAccess.Entities.Templates;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FormatConverter.Api.Controllers
@@ -9,28 +12,36 @@ namespace FormatConverter.Api.Controllers
     [Route("[controller]")]
     public class TemplateController : Controller
     {
-        [HttpGet]
-        public ActionResult<byte[]> Get(Guid id)
+        private readonly ITemplateService _templateService;
+        
+        public TemplateController(ITemplateService templateService)
         {
-           
-            return Ok(new byte[1]);
+            _templateService = templateService;
+        }
+        
+        [HttpGet]
+        public ActionResult<TemplateFile> Get(Guid id)
+        {
+            return Ok(new TemplateFile());
         }
 
         [HttpGet]
-        public ActionResult<List<byte[]>> GetAll()
+        public ActionResult<List<TemplateFile>> GetAll()
         {
-            return Ok(new List<byte[]>());
+            return Ok(new List<TemplateFile>());
         }
 
         [HttpPost]
-        public ActionResult<Guid> Create(IFormFile template)
+        public async Task<ActionResult<Guid>> Create(IPrintFormModel printFormModel)
         { 
-            if (template == null || template.Length <= 0)
+            if (printFormModel.Template == null || printFormModel.Template.Content?.Length <= 0)
             {
                 return BadRequest("Template was empty");
             }
-            
-            return Ok(Guid.NewGuid());
+
+            var templateId = await _templateService.Create(printFormModel);
+
+            return Ok(templateId);
         }
 
         [HttpPut]
@@ -41,7 +52,7 @@ namespace FormatConverter.Api.Controllers
                 return BadRequest("Guid was empty");
             }
             
-            return Ok(Guid.NewGuid());
+            return Ok();
         }
 
         [HttpDelete]
