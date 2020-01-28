@@ -15,10 +15,11 @@ namespace FormatConverter.Core.Services
     public class DocPdfConverter: IConverter
     {
         private readonly IDbRepository _dbRepository;
-
-        public DocPdfConverter(IDbRepository dbRepository)
+        private readonly ITemplateService _templateService;
+        public DocPdfConverter(IDbRepository dbRepository, ITemplateService templateService)
         {
             _dbRepository = dbRepository;
+            _templateService = templateService;
         }
         
         public async Task<File> Convert(IPrintFormModel printFormModel)
@@ -27,13 +28,12 @@ namespace FormatConverter.Core.Services
                 .Get<TemplateFile>()
                 .FirstOrDefaultAsync(x => x.Link == printFormModel.Template.Link);
 
-            if (template.File == null)
+            if (template == null)
             {
-                //download
-                template.File = new File();
-                await _dbRepository.Update(template);
+                //log
+                return null;
             }
-
+            
             await using (var stream = new MemoryStream(template.File.Content))
             {
                 var wordDocument = new WordDocument(stream, FormatType.Docx);

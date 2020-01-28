@@ -8,7 +8,7 @@ namespace FormatConverter.Api.Controllers
     public class ConverterController : Controller
     {
         private readonly IConverter _converter;
-
+        
         public ConverterController(IConverter converter)
         {
             _converter = converter;

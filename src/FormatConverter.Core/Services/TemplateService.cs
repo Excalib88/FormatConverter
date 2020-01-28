@@ -18,35 +18,26 @@ namespace FormatConverter.Core.Services
             _dbRepository = dbRepository;
         }
 
-        public async Task<Guid> Create(IPrintFormModel printFormModel)
+        public async Task<TemplateFile> Create(IPrintFormModel printFormModel)
         {
-            var link = printFormModel.Template.Link;
-            
-            var templateFile = await _dbRepository
-                .Get<TemplateFile>()
-                .FirstOrDefaultAsync(x => x.Link == link);
-
-            if (templateFile == null)
-            {
-                var templateContent = FileHelper.Download(printFormModel.Template.Link);
+            var templateContent = await FileHelper.Download(printFormModel.Template.Link);
+            var fullName = printFormModel.Template?.FullName;
                 
-                templateFile = new TemplateFile
+            var templateFile = new TemplateFile
+            {
+                Fullname = fullName,
+                Link = printFormModel.Template?.Link,
+                File = new File
                 {
-                    Fullname = printFormModel.Template.FullName,
-                    Link = link,
-                    File = new File
-                    {
-                        Content = templateContent
-                    }
-                };
-
-                if (printFormModel.IsSaveTemplate)
-                {
-                    await _dbRepository.Add(templateFile);
+                    FullName = fullName,
+                    Content = templateContent
                 }
-            }
-            
-            return Guid.NewGuid();
+            };
+                
+            // добавить проверку на сохранение темплейта, но мне кажется можно убрать этот параметр
+            await _dbRepository.Add(templateFile);
+
+            return templateFile;
         }
     }
 }

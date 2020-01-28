@@ -13,9 +13,5 @@
       <ProjectReference Include="..\FormatConverter.DataAccess\FormatConverter.DataAccess.csproj" />
       <ProjectReference Include="..\FormatConverter.Utils\FormatConverter.Utils.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Models" />
-    </ItemGroup>
-
+    
 </Project>

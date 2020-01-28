@@ -1,10 +1,17 @@
-﻿namespace FormatConverter.Utils
+﻿using System;
+using System.Net;
+using System.Threading.Tasks;
+
+namespace FormatConverter.Utils
 {
     public static class FileHelper
     {
-        public static byte[] Download(string link)
+        public static async Task<byte[]> Download(string link)
         {
-            return new byte[1];
+            var webClient = new WebClient();
+            var fileArray = await webClient.DownloadDataTaskAsync(new Uri(link));
+            
+            return fileArray;
         }
     }
 }

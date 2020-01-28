@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using FormatConverter.Abstractions;
 using FormatConverter.Core.Services;
 using FormatConverter.DataAccess.Entities.Templates;
+using FormatConverter.DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FormatConverter.Api.Controllers
@@ -13,35 +15,40 @@ namespace FormatConverter.Api.Controllers
     public class TemplateController : Controller
     {
         private readonly ITemplateService _templateService;
+        private readonly IDbRepository _dbRepository;
         
-        public TemplateController(ITemplateService templateService)
+        public TemplateController(ITemplateService templateService, IDbRepository dbRepository)
         {
             _templateService = templateService;
+            _dbRepository = dbRepository;
         }
         
+        // возможно рест методы и не нужны вовсе)
         [HttpGet]
         public ActionResult<TemplateFile> Get(Guid id)
         {
-            return Ok(new TemplateFile());
+            return Ok();
         }
 
         [HttpGet]
         public ActionResult<List<TemplateFile>> GetAll()
         {
-            return Ok(new List<TemplateFile>());
+            var templateFiles = _dbRepository.GetAll<TemplateFile>().ToList();
+            
+            return Ok(templateFiles);
         }
 
         [HttpPost]
         public async Task<ActionResult<Guid>> Create(IPrintFormModel printFormModel)
         { 
-            if (printFormModel.Template == null || printFormModel.Template.Content?.Length <= 0)
+            if (printFormModel.Template == null)
             {
                 return BadRequest("Template was empty");
             }
+            
+            var templateFile = await _templateService.Create(printFormModel);
 
-            var templateId = await _templateService.Create(printFormModel);
-
-            return Ok(templateId);
+            return Ok(templateFile.Id);
         }
 
         [HttpPut]

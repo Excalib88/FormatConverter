@@ -1,11 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FormatConverter.Abstractions;
+using FormatConverter.DataAccess.Entities.Templates;
 
 namespace FormatConverter.Core.Services
 {
     public interface ITemplateService
     {
-        Task<Guid> Create(IPrintFormModel printFormModel);
+        Task<TemplateFile> Create(IPrintFormModel printFormModel);
     }
 }
