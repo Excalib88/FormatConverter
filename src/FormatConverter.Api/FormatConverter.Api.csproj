@@ -6,6 +6,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\FormatConverter.Core\FormatConverter.Core.csproj" />
+      <ProjectReference Include="..\FormatConverter.DataAccess.Migrations\FormatConverter.DataAccess.Migrations.csproj" />
+      <ProjectReference Include="..\FormatConverter.DataAccess\FormatConverter.DataAccess.csproj" />
     </ItemGroup>
 
 </Project>

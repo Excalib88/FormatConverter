@@ -5,11 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="17.4.0.44" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FormatConverter.Abstractions\FormatConverter.Abstractions.csproj" />
+      <ProjectReference Include="..\FormatConverter.DataAccess\FormatConverter.DataAccess.csproj" />
     </ItemGroup>
 
 </Project>
