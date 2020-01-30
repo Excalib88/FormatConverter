@@ -1,5 +1,8 @@
 bin/
 obj/
-/packages/
+packages/
 .idea
 .vs
+publish/
+*.dll
+*.pdb

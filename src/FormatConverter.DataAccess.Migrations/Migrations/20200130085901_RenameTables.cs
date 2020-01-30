@@ -3,10 +3,26 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FormatConverter.DataAccess.Migrations.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class RenameTables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Files",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    IsActive = table.Column<bool>(nullable: false),
+                    DateCreated = table.Column<DateTime>(nullable: false),
+                    DateUpdated = table.Column<DateTime>(nullable: false),
+                    FullName = table.Column<string>(nullable: true),
+                    Content = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Files", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Templates",
                 columns: table => new
@@ -15,12 +31,19 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                     IsActive = table.Column<bool>(nullable: false),
                     DateCreated = table.Column<DateTime>(nullable: false),
                     DateUpdated = table.Column<DateTime>(nullable: false),
+                    Fullname = table.Column<string>(nullable: true),
                     Link = table.Column<string>(nullable: true),
-                    File = table.Column<byte[]>(nullable: true)
+                    FileId = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Templates", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Templates_Files_FileId",
+                        column: x => x.FileId,
+                        principalTable: "Files",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -49,6 +72,11 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                 name: "IX_ConvertHistories_TemplateId",
                 table: "ConvertHistories",
                 column: "TemplateId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Templates_FileId",
+                table: "Templates",
+                column: "FileId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -58,6 +86,9 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
 
             migrationBuilder.DropTable(
                 name: "Templates");
+
+            migrationBuilder.DropTable(
+                name: "Files");
         }
     }
 }

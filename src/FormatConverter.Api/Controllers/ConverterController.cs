@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FormatConverter.Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class ConverterController : Controller
     {
         private readonly IConverter _converter;
@@ -15,7 +17,7 @@ namespace FormatConverter.Api.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> DocToPdf(IPrintFormModel printFormModel)
+        public async Task<IActionResult> DocToPdf(PrintFormModel printFormModel)
         {
             if (printFormModel == null)
             {

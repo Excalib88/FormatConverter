@@ -14,5 +14,6 @@ namespace FormatConverter.DataAccess.Repositories
         Task<Guid> Add<T>(T newEntity) where T: class, IEntity;
         Task Delete<T>(T entity) where T: class, IEntity;
         Task Update<T>(T entity) where T: class, IEntity;
+        Task SaveChanges();
     }
 }

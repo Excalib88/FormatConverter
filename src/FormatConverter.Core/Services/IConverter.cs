@@ -6,6 +6,6 @@ namespace FormatConverter.Core.Services
 {
     public interface IConverter
     {
-        Task<File> Convert(IPrintFormModel file);
+        Task<File> Convert(PrintFormModel file);
     }
 }

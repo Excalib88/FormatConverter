@@ -7,6 +7,7 @@ using FormatConverter.Core.Services;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FormatConverter.Api.Controllers
 {
@@ -22,32 +23,24 @@ namespace FormatConverter.Api.Controllers
             _templateService = templateService;
             _dbRepository = dbRepository;
         }
-        
-        // возможно рест методы и не нужны вовсе)
-        [HttpGet]
-        public ActionResult<TemplateFile> Get(Guid id)
-        {
-            return Ok();
-        }
 
         [HttpGet]
-        public ActionResult<List<TemplateFile>> GetAll()
+        public ActionResult<List<TemplateFile>> Get()
         {
-            var templateFiles = _dbRepository.GetAll<TemplateFile>().ToList();
-            
+            var templateFiles = _dbRepository.Get<TemplateFile>().Include(x => x.File).ToList();
             return Ok(templateFiles);
         }
-
+        
         [HttpPost]
-        public async Task<ActionResult<Guid>> Create(IPrintFormModel printFormModel)
-        { 
-            if (printFormModel.Template == null)
+        public async Task<ActionResult<Guid>> Create(TemplateFileModel templateFileModel)
+        {
+            if (templateFileModel == null)  
             {
                 return BadRequest("Template was empty");
             }
             
-            var templateFile = await _templateService.Create(printFormModel);
-
+            var templateFile = await _templateService.Create(templateFileModel);
+            
             return Ok(templateFile.Id);
         }
 

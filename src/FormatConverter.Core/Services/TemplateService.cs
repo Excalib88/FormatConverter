@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using FormatConverter.Abstractions;
+using FormatConverter.DataAccess.Entities;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.DataAccess.Repositories;
 using FormatConverter.Utils;
@@ -18,15 +19,25 @@ namespace FormatConverter.Core.Services
             _dbRepository = dbRepository;
         }
 
-        public async Task<TemplateFile> Create(IPrintFormModel printFormModel)
+        public async Task<TemplateFile> Create(TemplateFileModel templateFileModel)
         {
-            var templateContent = await FileHelper.Download(printFormModel.Template.Link);
-            var fullName = printFormModel.Template?.FullName;
+            var existTemplateFile = await _dbRepository
+                .Get<TemplateFile>()
+                .FirstOrDefaultAsync(x => x.Link == templateFileModel.Link);
+
+            if (existTemplateFile != null)
+            {
+                //log
+                return null;
+            }
+
+            var templateContent = await FileHelper.Download(templateFileModel.Link);
+            var fullName = templateFileModel.FullName;
                 
             var templateFile = new TemplateFile
             {
                 Fullname = fullName,
-                Link = printFormModel.Template?.Link,
+                Link = templateFileModel.Link,
                 File = new File
                 {
                     FullName = fullName,
@@ -34,9 +45,9 @@ namespace FormatConverter.Core.Services
                 }
             };
                 
-            // добавить проверку на сохранение темплейта, но мне кажется можно убрать этот параметр
             await _dbRepository.Add(templateFile);
-
+            await _dbRepository.SaveChanges();
+            
             return templateFile;
         }
     }

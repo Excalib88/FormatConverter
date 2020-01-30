@@ -6,6 +6,6 @@ namespace FormatConverter.Core.Services
 {
     public interface ITemplateService
     {
-        Task<TemplateFile> Create(IPrintFormModel printFormModel);
+        Task<TemplateFile> Create(TemplateFileModel templateFileModel);
     }
 }

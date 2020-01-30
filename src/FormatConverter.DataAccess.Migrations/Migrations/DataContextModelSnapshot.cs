@@ -44,7 +44,33 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                     b.ToTable("ConvertHistories");
                 });
 
-            modelBuilder.Entity("FormatConverter.DataAccess.Entities.Templates.Template", b =>
+            modelBuilder.Entity("FormatConverter.DataAccess.Entities.File", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("Content")
+                        .HasColumnType("BLOB");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DateUpdated")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Files");
+                });
+
+            modelBuilder.Entity("FormatConverter.DataAccess.Entities.Templates.TemplateFile", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,8 +82,11 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                     b.Property<DateTime>("DateUpdated")
                         .HasColumnType("TEXT");
 
-                    b.Property<byte[]>("File")
-                        .HasColumnType("BLOB");
+                    b.Property<Guid?>("FileId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Fullname")
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("INTEGER");
@@ -67,14 +96,23 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FileId");
+
                     b.ToTable("Templates");
                 });
 
             modelBuilder.Entity("FormatConverter.DataAccess.Entities.ConvertHistory", b =>
                 {
-                    b.HasOne("FormatConverter.DataAccess.Entities.Templates.Template", "Template")
+                    b.HasOne("FormatConverter.DataAccess.Entities.Templates.TemplateFile", "Template")
                         .WithMany()
                         .HasForeignKey("TemplateId");
+                });
+
+            modelBuilder.Entity("FormatConverter.DataAccess.Entities.Templates.TemplateFile", b =>
+                {
+                    b.HasOne("FormatConverter.DataAccess.Entities.File", "File")
+                        .WithMany()
+                        .HasForeignKey("FileId");
                 });
 #pragma warning restore 612, 618
         }

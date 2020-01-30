@@ -40,7 +40,12 @@ namespace FormatConverter.DataAccess.Repositories
         {
             await Task.Run(() => _context.Set<T>().Update(entity));
         }
-        
+
+        public async Task SaveChanges()
+        {
+            await _context.SaveChangesAsync();
+        }
+
 
         public IQueryable<T> GetAll<T>() where T: class, IEntity
         {

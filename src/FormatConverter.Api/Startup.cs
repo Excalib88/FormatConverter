@@ -1,21 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using FormatConverter.Abstractions;
-using FormatConverter.Core;
+using System.Text.RegularExpressions;
 using FormatConverter.Core.Services;
 using FormatConverter.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace FormatConverter.Api
 {
@@ -30,18 +24,42 @@ namespace FormatConverter.Api
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                options.Conventions.Add(new RouteTokenTransformerConvention(
+                    new SlugifyParameterTransformer()));
+            });
+            
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Format Converter API", Version = "v1" });
+            });
+            
             services.AddSqLiteDatabase(_configuration);
             services.AddScoped<IConverter, DocPdfConverter>();
+            services.AddScoped<ITemplateService, TemplateService>(); 
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
-            serviceProvider.GetService<DataContext>().Database.Migrate();    
+            //serviceProvider.GetService<DataContext>().Database.Migrate();    
             
             app.UseRouting();
             app.UseAuthorization();
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(x =>
+            {
+                x.SwaggerEndpoint("/swagger/v1/swagger.json", "Format Converter API v1");
+                x.RoutePrefix = "swagger";
+            });
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
+    }
+    
+    public class SlugifyParameterTransformer : IOutboundParameterTransformer
+    {
+        public string TransformOutbound(object value) => value == null ? null : 
+                Regex.Replace(value.ToString(), "([a-z])([A-Z])", "$1-$2").ToLower();
     }
 }

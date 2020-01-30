@@ -3,29 +3,30 @@ using System.Threading.Tasks;
 using FormatConverter.Abstractions;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.DataAccess.Repositories;
+using FormatConverter.Utils;
 using Microsoft.EntityFrameworkCore;
 using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using Syncfusion.DocIORenderer;
 using Syncfusion.OfficeChart;
-using File = FormatConverter.Abstractions.File;
+using File = FormatConverter.DataAccess.Entities.File;
 
 namespace FormatConverter.Core.Services
 {
     public class DocPdfConverter: IConverter
     {
         private readonly IDbRepository _dbRepository;
-        private readonly ITemplateService _templateService;
-        public DocPdfConverter(IDbRepository dbRepository, ITemplateService templateService)
+        
+        public DocPdfConverter(IDbRepository dbRepository)
         {
             _dbRepository = dbRepository;
-            _templateService = templateService;
         }
         
-        public async Task<File> Convert(IPrintFormModel printFormModel)
+        public async Task<File> Convert(PrintFormModel printFormModel)
         {
             var template = await _dbRepository
                 .Get<TemplateFile>()
+                .Include(x => x.File)
                 .FirstOrDefaultAsync(x => x.Link == printFormModel.Template.Link);
 
             if (template == null)
@@ -45,19 +46,23 @@ namespace FormatConverter.Core.Services
                 
                 var render = new DocIORenderer();
                 render.Settings.ChartRenderingOptions.ImageFormat =  ExportImageFormat.Jpeg;
-                
+
                 await using (var outputStream = new MemoryStream())
                 {
                     var pdfDocument = render.ConvertToPDF(wordDocument);
                     pdfDocument.Save(outputStream);
 
-                    return new File
+                    var file =  new File
                     {
                         FullName = printFormModel.Template.FullName,
                         Content = outputStream.ToArray()
                     };
+
+                    var targetFileName = FileHelper.ChangeFileExtension(file.FullName);
+                    await System.IO.File.WriteAllBytesAsync(targetFileName, file.Content);
+                    
+                    return file;
                 }
-                
             }
         }
     }
