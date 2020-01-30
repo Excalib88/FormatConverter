@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 using FormatConverter.Abstractions;
+using FormatConverter.DataAccess;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.DataAccess.Repositories;
 using FormatConverter.Utils;
@@ -52,13 +53,17 @@ namespace FormatConverter.Core.Services
                     var pdfDocument = render.ConvertToPDF(wordDocument);
                     pdfDocument.Save(outputStream);
 
+                    var targetFileName = FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
+                    
                     var file =  new File
                     {
-                        FullName = printFormModel.Template.FullName,
+                        Type = FileType.Converted,
+                        FullName = targetFileName,
                         Content = outputStream.ToArray()
                     };
 
-                    var targetFileName = FileHelper.ChangeFileExtension(file.FullName);
+                    await _dbRepository.Add(file);
+                    
                     await System.IO.File.WriteAllBytesAsync(targetFileName, file.Content);
                     
                     return file;

@@ -22,6 +22,9 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<Guid?>("ConvertedFileId")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("TEXT");
 
@@ -31,15 +34,9 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("INTEGER");
 
-                    b.Property<Guid?>("TemplateId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("TemplateId");
+                    b.HasIndex("ConvertedFileId");
 
                     b.ToTable("ConvertHistories");
                 });
@@ -63,6 +60,9 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Type")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -103,9 +103,9 @@ namespace FormatConverter.DataAccess.Migrations.Migrations
 
             modelBuilder.Entity("FormatConverter.DataAccess.Entities.ConvertHistory", b =>
                 {
-                    b.HasOne("FormatConverter.DataAccess.Entities.Templates.TemplateFile", "Template")
+                    b.HasOne("FormatConverter.DataAccess.Entities.File", "ConvertedFile")
                         .WithMany()
-                        .HasForeignKey("TemplateId");
+                        .HasForeignKey("ConvertedFileId");
                 });
 
             modelBuilder.Entity("FormatConverter.DataAccess.Entities.Templates.TemplateFile", b =>

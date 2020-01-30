@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using FormatConverter.Abstractions;
+using FormatConverter.DataAccess;
 using FormatConverter.DataAccess.Entities;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.DataAccess.Repositories;
@@ -40,6 +41,7 @@ namespace FormatConverter.Core.Services
                 Link = templateFileModel.Link,
                 File = new File
                 {
+                    Type = FileType.Template,
                     FullName = fullName,
                     Content = templateContent
                 }

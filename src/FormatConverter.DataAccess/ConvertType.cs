@@ -1,8 +1,8 @@
 ﻿namespace FormatConverter.DataAccess
 {
-    public enum ConvertType
+    public enum FileType
     {
-        Link = 10,
-        File = 20
+        Template = 10,
+        Converted = 20
     }
 }
