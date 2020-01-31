@@ -1,6 +1,9 @@
 using System;
+using System.ComponentModel;
 using System.Text.RegularExpressions;
+using FormatConverter.Core;
 using FormatConverter.Core.Services;
+using FormatConverter.Core.Services.Render;
 using FormatConverter.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Syncfusion.Licensing;
 
 namespace FormatConverter.Api
 {
@@ -37,13 +41,13 @@ namespace FormatConverter.Api
             
             services.AddSqLiteDatabase(_configuration);
             services.AddScoped<IConverter, DocPdfConverter>();
-            services.AddScoped<ITemplateService, TemplateService>(); 
+            services.AddScoped<ITemplateService, TemplateService>();
+            services.AddScoped<IRenderService, SyncfusionRenderService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             //serviceProvider.GetService<DataContext>().Database.Migrate();    
-            
             app.UseRouting();
             app.UseAuthorization();
             

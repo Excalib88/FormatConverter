@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="FormatConverter" uuid="e696a5e1-28bb-4860-83b6-ec3c0b5466ca">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\projects\FormatConverter\src\FormatConverter.Api\FormatConverter.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

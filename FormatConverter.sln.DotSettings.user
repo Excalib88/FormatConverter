@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\dmansurov\.nuget\packages\syncfusion.dociorenderer.net.core\17.4.0.44\lib\netstandard2.0\Syncfusion.DocIORenderer.Portable.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\dmansurov\.nuget\packages\syncfusion.licensing\17.4.0.46\lib\netstandard2.0\Syncfusion.Licensing.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\dmansurov\.nuget\packages\syncfusion.pdf.net.core\17.4.0.46\lib\netstandard2.0\Syncfusion.Pdf.Portable.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

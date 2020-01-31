@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1f27e6a-6325-4250-83ce-6c839d60afdc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FormatConverter.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/123" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Template.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/FormatConverter.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/FormatConverter.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/18/64886698/BrushInfoColorArrayList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Abstractions/PrintFormModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/92/93f4e2e8/RenderViewer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/2b/8c49f227/ScatterConnectType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Abstractions/TemplateFileModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Abstractions/IPrintFormModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Abstractions/IFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/Templates/TemplateFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/14/3c19f1fc/MarkerSetting.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/IDbRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/DbRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/ConvertHistory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/eb/939a379b/ThemeColorNameEnum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/660D20EA-1631-4B99-B938-7763F54AFFA5/95/e62d5066/PdfDocument.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/6d/05d4a128/ViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/DataContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/ConvertType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/5a/d96f4f27/IChangeNotifyingItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Controllers/TemplateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/f3/8db2c354/NullableHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/00/edd29537/PropertyChangeEffect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/6e/8f4c2763/SyncfusionCancelEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/13/fa773a6f/SyncfusionEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/83/06692dee/SyncfusionHandledEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BBB3B884-123D-47EA-9CD1-5BED540D02AE/9a/6684768c/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/78/812c9467/SyncfusionPropertyChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/973A6AB6-E0AE-4131-8B2A-C9817DF834CE/9f/dcd662ac/FusionLicenseProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/1e/973f3b8f/SyncfusionPropertyChangedEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/obj/Debug/netstandard2.1/FormatConverter.Core.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/973A6AB6-E0AE-4131-8B2A-C9817DF834CE/84/4ee6bac6/SyncfusionLicenseProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/1c/9d310bd7/SyncfusionSuccessEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/cf/6a702d55/TraceProperties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/d5/8a367dad/TracePropertyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/TemplateService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/ITemplateService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/IConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/7f/1ad7ea65/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/69/6b2cccd5/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77F74B78-6CBF-436D-B621-58CEA65E630D/dc/50f41e7a/DocIORenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/9d/ea7c3d37/DocIORendererSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/15/1b391046/WebClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E7339626-780C-4225-A9C3-D4857115A9FB/18/4bf94ab8/PdfDocument.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/1f/5105f270/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/76/c40f370a/ShapePath.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/File.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/c2/ffee5a09/DocIORenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/43/602ba49b/SortByColorBrightness.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BBB3B884-123D-47EA-9CD1-5BED540D02AE/8d/f59532e8/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/0d/197f31c0/PDFDrawingContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/ce/625a0c4d/BookmarkPosition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/17/294cfa25/PatternStyle.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/FormatConverter.sln" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Class1.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/WeatherForecast.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/WeatherForecastController.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Program.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Abstractions/File.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Abstractions/PrintFormModel.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/IDbRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/DbRepository.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/IConverter.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/ITemplateService.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/TemplateController.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/BaseEntity.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/File.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/ConvertType.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/ConvertHistory.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/TemplateService.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/SyncfusionLicenseProvider.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/FusionLicenseProvider.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X0qsI7GJiBD6ZcXnHRJlOMQcE9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/FormatConverter.Api/bin/Debug/netcoreapp3.1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.FormatConverter.Api">
+    <configuration default="true" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish runtime="Portable" target_folder="$PROJECT_DIR$/src/FormatConverter.Api/bin/Debug/netcoreapp3.1" target_framework="netcoreapp3.1" uuid_high="4042492833027475130" uuid_low="-8431262716436363262" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FormatConverter.Api" type="DotNetProject" factoryName=".NET Project" singleton="false" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/src/FormatConverter.Api/bin/Debug/netcoreapp3.1/FormatConverter.Api.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/FormatConverter.Api" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.Api.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v3.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiDocker" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="format-converter" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="src/FormatConverter.Api/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Project.FormatConverter.Api" />
+      <item itemvalue="Docker.ApiDocker" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.FormatConverter.Api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.5335498" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3a667cac" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1cb384df" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1f27e6a-6325-4250-83ce-6c839d60afdc" name="Default Changelist" comment="" />
+      <created>1580193565088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580193565088</updated>
+      <workItem from="1580193567665" duration="544000" />
+      <workItem from="1580278602365" duration="9418000" />
+      <workItem from="1580309025871" duration="30263000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" initialLine="13">
+            <startOffsets>
+              <option value="289" />
+            </startOffsets>
+            <endOffsets>
+              <option value="326" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" initialLine="21">
+            <startOffsets>
+              <option value="563" />
+            </startOffsets>
+            <endOffsets>
+              <option value="614" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" initialLine="19">
+            <startOffsets>
+              <option value="485" />
+            </startOffsets>
+            <endOffsets>
+              <option value="516" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" initialLine="32">
+            <startOffsets>
+              <option value="1192" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1222" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

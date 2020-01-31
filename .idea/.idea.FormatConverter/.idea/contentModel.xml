@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\projects\FormatConverter" t="IncludeFlat">
+      <e p="FormatConverter.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src\FormatConverter.Abstractions" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FormatConverter.Abstractions.csproj" t="IncludeRecursive" />
+        <e p="IFile.cs" t="Include" />
+        <e p="IPrintFormModel.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="FormatConverter.Abstractions.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PrintFormModel.cs" t="Include" />
+        <e p="TemplateFileModel.cs" t="Include" />
+      </e>
+      <e p="src\FormatConverter.Api" t="IncludeRecursive">
+        <e p="123" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ConverterController.cs" t="Include" />
+          <e p="TemplateController.cs" t="Include" />
+        </e>
+        <e p="docker-run.ps1" t="Include" />
+        <e p="Dockerfile" t="Include" />
+        <e p="FormatConverter.Api.csproj" t="IncludeRecursive" />
+        <e p="FormatConverter.db" t="Include" />
+        <e p="FormatConverter.db-shm" t="Include" />
+        <e p="FormatConverter.db-wal" t="Include" />
+        <e p="migrate.ps1" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="FormatConverter.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Template.pdf" t="Include" />
+      </e>
+      <e p="src\FormatConverter.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FormatConverter.Core.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="FormatConverter.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="DocPdfConverter.cs" t="Include" />
+          <e p="IConverter.cs" t="Include" />
+          <e p="ITemplateService.cs" t="Include" />
+          <e p="Render" t="Include">
+            <e p="IRenderService.cs" t="Include" />
+            <e p="SyncfusionRenderService.cs" t="Include" />
+          </e>
+          <e p="TemplateService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="src\FormatConverter.DataAccess" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConvertType.cs" t="Include" />
+        <e p="DataContext.cs" t="Include" />
+        <e p="Entities" t="Include">
+          <e p="BaseEntity.cs" t="Include" />
+          <e p="ConvertHistory.cs" t="Include" />
+          <e p="File.cs" t="Include" />
+          <e p="IEntity.cs" t="Include" />
+          <e p="Templates" t="Include">
+            <e p="TemplateFile.cs" t="Include" />
+          </e>
+        </e>
+        <e p="FormatConverter.DataAccess.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="FormatConverter.DataAccess.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="DbRepository.cs" t="Include" />
+          <e p="IDbRepository.cs" t="Include" />
+        </e>
+        <e p="ServiceCollectionExtension.cs" t="Include" />
+      </e>
+      <e p="src\FormatConverter.DataAccess.Migrations" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FormatConverter.DataAccess.Migrations.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20200130124214_UpdatedModels.cs" t="Include" />
+          <e p="20200130124214_UpdatedModels.Designer.cs" t="Include" />
+          <e p="DataContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="FormatConverter.DataAccess.Migrations.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="src\FormatConverter.Utils" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FileHelper.cs" t="Include" />
+        <e p="FormatConverter.Utils.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="FormatConverter.Utils.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="C:\Users\dmansurov\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\dmansurov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\dmansurov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_FormatConverter.-1907964627.00" t="ExcludeRecursive" />
+  </component>
+</project>

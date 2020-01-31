@@ -5,7 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="17.4.0.44" />
+      <PackageReference Include="iTextSharp" Version="5.5.13.1" />
+      <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="17.4.0.46" />
+      <PackageReference Include="Syncfusion.Licensing" Version="17.4.0.46" />
     </ItemGroup>
 
     <ItemGroup>
