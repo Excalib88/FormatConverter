@@ -42,7 +42,7 @@ namespace FormatConverter.Api
             services.AddSqLiteDatabase(_configuration);
             services.AddScoped<IConverter, DocPdfConverter>();
             services.AddScoped<ITemplateService, TemplateService>();
-            services.AddScoped<IRenderService, SyncfusionRenderService>();
+            services.AddScoped<IRenderService, OpenXmlRenderService>(); //SyncfusionRenderService
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)

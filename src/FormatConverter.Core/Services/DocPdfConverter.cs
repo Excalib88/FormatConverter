@@ -29,7 +29,7 @@ namespace FormatConverter.Core.Services
                 .FirstOrDefaultAsync(x => x.Link == printFormModel.Template.Link);
 
             var renderedFile = await _renderService.Render(printFormModel, template);
-            var targetFileName = FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
+            var targetFileName = printFormModel.Template.FullName;//FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
             var file =  new File
             {
                 Type = FileType.Converted,
@@ -37,6 +37,12 @@ namespace FormatConverter.Core.Services
                 Content = renderedFile
             };
 
+            if (file.Content == null)
+            {
+                //log
+                return null;
+            }
+            
             await _dbRepository.Add(file);
             await _dbRepository.SaveChanges();
             

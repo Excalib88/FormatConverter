@@ -25,6 +25,12 @@ namespace FormatConverter.Api.Controllers
             }
             
             var result = await _converter.Convert(printFormModel);
+            
+            if (result == null)
+            {
+                return BadRequest("Result was null");
+            }
+            
             return Ok(result);
         }
     }

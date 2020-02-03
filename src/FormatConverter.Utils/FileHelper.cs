@@ -31,5 +31,15 @@ namespace FormatConverter.Utils
         {
             return fileName.Replace(".docx", ".pdf");
         }
+
+        public static void DeleteFilesFromDirectory(string path)
+        {
+            var directoryInfo = new DirectoryInfo(path);
+
+            foreach (var file in directoryInfo.GetFiles())
+            {
+                file.Delete();
+            }
+        }
     }
 }

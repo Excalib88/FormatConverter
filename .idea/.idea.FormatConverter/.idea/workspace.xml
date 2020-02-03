@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f27e6a-6325-4250-83ce-6c839d60afdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FormatConverter.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/123" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Template.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FormatConverter.sln.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/FormatConverter.sln.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FormatConverter.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/FormatConverter.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/FormatConverter.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/FormatConverter.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/FormatConverter.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59BE9913-46DF-4EC7-BE3A-9D99B85AD656/fe/1ffc24a3/OpenXmlPackage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/18/64886698/BrushInfoColorArrayList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Abstractions/PrintFormModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,8 +46,10 @@
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/DataContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/ConvertType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/5a/d96f4f27/IChangeNotifyingItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BBB3B884-123D-47EA-9CD1-5BED540D02AE/80/8ad183de/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Controllers/TemplateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/f3/8db2c354/NullableHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,6 +82,7 @@
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/File.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/c2/ffee5a09/DocIORenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59BE9913-46DF-4EC7-BE3A-9D99B85AD656/eb/fc5e9806/WordprocessingDocument.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/43/602ba49b/SortByColorBrightness.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BBB3B884-123D-47EA-9CD1-5BED540D02AE/8d/f59532e8/AsyncValueTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9BF815B3-E3F7-4FAC-9E4B-89712AE47AD6/0d/197f31c0/PDFDrawingContext.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,16 +96,13 @@
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/WeatherForecast.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/WeatherForecastController.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Program.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Abstractions/File.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Abstractions/PrintFormModel.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/IDbRepository.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Repositories/DbRepository.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/IConverter.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/ITemplateService.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/TemplateController.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/BaseEntity.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.DataAccess/Entities/File.cs" />
@@ -110,9 +112,13 @@
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/SyncfusionLicenseProvider.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/FusionLicenseProvider.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Program.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +138,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.FormatConverter.Api">
+  <component name="RunManager" selected="Docker.ApiDocker">
     <configuration default="true" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish runtime="Portable" target_folder="$PROJECT_DIR$/src/FormatConverter.Api/bin/Debug/netcoreapp3.1" target_framework="netcoreapp3.1" uuid_high="4042492833027475130" uuid_low="-8431262716436363262" />
       <method v="2" />
@@ -209,17 +215,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@170f62e3" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3a667cac" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@661612d8" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1cb384df" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@170f62e3" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@684d40b7" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -239,7 +240,8 @@
       <updated>1580193565088</updated>
       <workItem from="1580193567665" duration="544000" />
       <workItem from="1580278602365" duration="9418000" />
-      <workItem from="1580309025871" duration="30263000" />
+      <workItem from="1580309025871" duration="32069000" />
+      <workItem from="1580707998624" duration="14925000" />
     </task>
     <servers />
   </component>
@@ -312,17 +314,30 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs</url>
-          <line>32</line>
-          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" initialLine="32">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" initialLine="54">
             <startOffsets>
-              <option value="1192" />
+              <option value="1957" />
             </startOffsets>
             <endOffsets>
-              <option value="1222" />
+              <option value="1971" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" initialLine="15">
+            <startOffsets>
+              <option value="534" />
+            </startOffsets>
+            <endOffsets>
+              <option value="626" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

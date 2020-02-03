@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Goelze.SkiaSharp.NativeAssets.AlpineLinux" Version="1.68.0" />
+      <PackageReference Include="Open-XML-SDK" Version="2.9.1" />
+      <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="1.68.2-preview.21" />
+      <PackageReference Include="SkiaSharp.NativeAssets.NanoServer" Version="1.68.2-preview.21" />
       <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="17.4.0.46" />
     </ItemGroup>
 
