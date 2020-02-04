@@ -6,3 +6,4 @@ publish/
 *.dll
 *.pdb
 .idea/
+vendor/
