@@ -1,10 +1,14 @@
 ﻿using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 using FormatConverter.Abstractions;
 using FormatConverter.DataAccess.Entities.Templates;
 using FormatConverter.Utils;
+using Syncfusion.DocIO;
+using Syncfusion.DocIO.DLS;
 
 namespace FormatConverter.Core.Services.Render
 {
@@ -12,6 +16,11 @@ namespace FormatConverter.Core.Services.Render
     {
         public async Task<byte[]> Render(PrintFormModel printFormModel, TemplateFile templateFile)
         {
+            if (!Directory.Exists("temp"))
+            {
+                Directory.CreateDirectory("temp");
+            }
+            
             var tempPath = $"temp/{templateFile.Fullname}";
             await using (var fs = new FileStream(tempPath, FileMode.OpenOrCreate, FileAccess.ReadWrite))
             {
@@ -20,22 +29,28 @@ namespace FormatConverter.Core.Services.Render
             
             using (var wordDocument = WordprocessingDocument.Open(tempPath, true))
             {
-                string docText;
-                using (var sr = new StreamReader(wordDocument.MainDocumentPart.GetStream()))
+                var document = wordDocument.MainDocumentPart.Document;
+
+                foreach (OpenXmlElement childElement in document.ChildElements)
                 {
-                    docText = sr.ReadToEnd();
+                    if (childElement.InnerText != "")
+                    {
+                        
+                    }
                 }
 
                 foreach (var (key, value) in printFormModel.Schema)
                 {
-                    var regexKey = new Regex(key);
-                    docText = regexKey.Replace(docText, value);
+                    foreach (var text in document.Body.Descendants<Text>())
+                    {
+                        if (text.Text.Contains(key))
+                        {
+                            text.Text = text.Text.Replace(key, value);
+                        }
+                    }
                 }
-                
-                using (var sw = new StreamWriter(wordDocument.MainDocumentPart.GetStream(FileMode.Create)))
-                {
-                    await sw.WriteAsync(docText);
-                }
+
+                wordDocument.SaveAs(@"C:\projects\FormatConverter\src\FormatConverter.Api\dasd.docx");
                 wordDocument.Close();
             }
 

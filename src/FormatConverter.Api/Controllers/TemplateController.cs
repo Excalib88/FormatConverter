@@ -43,7 +43,7 @@ namespace FormatConverter.Api.Controllers
             
             var templateFile = await _templateService.Create(templateFileModel);
             
-            return Ok(templateFile.Id);
+            return Ok(templateFile?.Id);
         }
 
         [HttpPut]

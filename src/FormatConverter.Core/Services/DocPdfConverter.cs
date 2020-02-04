@@ -33,7 +33,8 @@ namespace FormatConverter.Core.Services
             var template = await _dbRepository
                                .Get<TemplateFile>()
                                .Include(x => x.File)
-                               .FirstOrDefaultAsync(x => x.Link == printFormModel.Template.Link) ?? await _templateService.Create(printFormModel.Template);
+                               .FirstOrDefaultAsync(x => x.Link == printFormModel.Template.Link) 
+                           ?? await _templateService.Create(printFormModel.Template);
 
             var renderedFile = await _renderService.Render(printFormModel, template);
             var targetFileName = printFormModel.Template.FullName;//FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
@@ -53,9 +54,6 @@ namespace FormatConverter.Core.Services
             await _dbRepository.Add(file);
             await _dbRepository.SaveChanges();
             
-            // todo: удалить при релизе
-            await System.IO.File.WriteAllBytesAsync(targetFileName, renderedFile);
-                
             return file;
         }
 
