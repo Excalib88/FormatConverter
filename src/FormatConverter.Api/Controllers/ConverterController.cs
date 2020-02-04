@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using FormatConverter.Abstractions;
 using FormatConverter.Core.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -9,11 +10,11 @@ namespace FormatConverter.Api.Controllers
     [Route("[controller]")]
     public class ConverterController : Controller
     {
-        private readonly IConverter _converter;
+        private readonly IDocPdfConverter _docPdfConverter;
         
-        public ConverterController(IConverter converter)
+        public ConverterController(IDocPdfConverter docPdfConverter)
         {
-            _converter = converter;
+            _docPdfConverter = docPdfConverter;
         }
         
         [HttpPost]
@@ -24,14 +25,9 @@ namespace FormatConverter.Api.Controllers
                 return BadRequest("PrintFormModel was null");
             }
             
-            var result = await _converter.Convert(printFormModel);
+            var result = await _docPdfConverter.Convert(printFormModel);
             
-            if (result == null)
-            {
-                return BadRequest("Result was null");
-            }
-            
-            return Ok(result);
+            return File(result.Content, "application/octet-stream", $"{result.FullName}");
         }
     }
 }

@@ -22,6 +22,13 @@ namespace FormatConverter.Core.Services.Render
                     wordDocument.ReplaceSingleLine(key, value, false, false);
                 }
 
+                await using (var outputStream = new MemoryStream())
+                {
+                     wordDocument.Save(outputStream, FormatType.Docx);
+                     return outputStream.ToArray();
+                }
+                   
+
                 var render = new DocIORenderer();
                 render.Settings.ChartRenderingOptions.ImageFormat = ExportImageFormat.Jpeg;
 

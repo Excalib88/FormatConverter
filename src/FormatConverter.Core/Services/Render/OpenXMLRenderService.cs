@@ -36,6 +36,7 @@ namespace FormatConverter.Core.Services.Render
                 {
                     await sw.WriteAsync(docText);
                 }
+                wordDocument.Close();
             }
 
             byte[] result;

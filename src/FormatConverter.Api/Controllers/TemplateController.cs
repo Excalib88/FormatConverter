@@ -17,11 +17,13 @@ namespace FormatConverter.Api.Controllers
     {
         private readonly ITemplateService _templateService;
         private readonly IDbRepository _dbRepository;
+        private readonly IDocPdfConverter _docPdfConverter;
         
-        public TemplateController(ITemplateService templateService, IDbRepository dbRepository)
+        public TemplateController(ITemplateService templateService, IDbRepository dbRepository, IDocPdfConverter docPdfConverter)
         {
             _templateService = templateService;
             _dbRepository = dbRepository;
+            _docPdfConverter = docPdfConverter;
         }
 
         [HttpGet]
@@ -59,6 +61,13 @@ namespace FormatConverter.Api.Controllers
         public IActionResult Delete(Guid id)
         {
             return Ok();
+        }
+        
+        [HttpPost("validate")]
+        public async Task<ActionResult<IEnumerable<string>>> ValidateTemplate(TemplateValidateModel model)
+        {
+            var result = await _docPdfConverter.Validate(model);
+            return Ok(result);
         }
     }
 }
