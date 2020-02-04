@@ -18,9 +18,5 @@ return array(
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Icecave\\Repr\\' => array($vendorDir . '/icecave/repr/src'),
-    'Gears\\String\\' => array($vendorDir . '/gears/string/src'),
-    'Gears\\Di\\' => array($vendorDir . '/gears/di/src'),
-    'Gears\\' => array($vendorDir . '/gears/pdf/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
-    'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),
 );

@@ -9,6 +9,7 @@ return array(
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     'e40631d46120a9c38ea139981f8dab26' => $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     '5255c38a0faeba867671b61dfda6d864' => $vendorDir . '/paragonie/random_compat/lib/random.php',
+    '7e9bd612cc444b3eed788ebbe46263a0' => $vendorDir . '/laminas/laminas-zendframework-bridge/src/autoload.php',
     '848a06382c1c883893a9c9833ae2b551' => $vendorDir . '/symfony/polyfill/src/Apcu/bootstrap.php',
     'd075ca29fdd460a76e9d730a9724dc20' => $vendorDir . '/symfony/polyfill/src/Php54/bootstrap.php',
     '7d1c739f734e1193d0c090179eeb95aa' => $vendorDir . '/symfony/polyfill/src/Php55/bootstrap.php',
@@ -21,7 +22,6 @@ return array(
     '946db64f9a5c0688514fdcdafcabe7d2' => $vendorDir . '/symfony/polyfill/src/Intl/Icu/bootstrap.php',
     '299b3c040b39cb03c6eceb9bb272ad1d' => $vendorDir . '/symfony/polyfill/src/Intl/Normalizer/bootstrap.php',
     'e59f725579f9974327c76777296d6dcc' => $vendorDir . '/symfony/polyfill/src/Mbstring/bootstrap.php',
-    'b46ad4fe52f4d1899a2951c7e6ea56b0' => $vendorDir . '/voku/portable-utf8/bootstrap.php',
     'cf150f72bd303a2ff07711c9a70f2d53' => $vendorDir . '/google/apiclient/src/Google/autoload.php',
-    '7e9bd612cc444b3eed788ebbe46263a0' => $vendorDir . '/laminas/laminas-zendframework-bridge/src/autoload.php',
+    'b46ad4fe52f4d1899a2951c7e6ea56b0' => $vendorDir . '/voku/portable-utf8/bootstrap.php',
 );

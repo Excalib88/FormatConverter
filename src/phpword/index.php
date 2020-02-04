@@ -1,6 +1,5 @@
 <?php
 use PhpOffice\PhpWord\IOFactory;
-use Dompdf\Dompdf;
 
 require_once 'vendor/autoload.php';
 
@@ -10,17 +9,22 @@ if($method != "POST") {
     echo('Некорректный запрос!');
     return;
 }
+class Dictionary{
+    public $Key;
+    public $Value;
+}
 
 $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('Template.docx');
 
-$templateProcessor->setValue('d_num', $_POST["d_num"]);
-$templateProcessor->setValue('d_date', '04.10.2014');
-$templateProcessor->setValue('last_name', 'Никоненко');
-$templateProcessor->setValue('имя', 'Сергей');
-$templateProcessor->setValue('surname', 'Васильевич');
-$templateProcessor->setValue('konstantin', 'сосите ХУЕЦ!');
+$schemas = json_decode($_POST["schema"]);
+$mapper = new JsonMapper();
+$dictArray = $mapper->mapArray($schemas, new ArrayObject(), 'Dictionary');
 
-$templateProcessor->saveAs('template312312.docx');
+foreach($dictArray as $dict) {
+    $templateProcessor->setValue($dict->Key, $dict->Value);
+}
+
+$templateProcessor->saveAs('templateResult.docx');
 
 shell_exec('sudo unoconv -f pdf template312312.docx');
 
@@ -38,6 +42,6 @@ if (file_exists($attachment_location)) {
     echo($attachment_location);
 }
 else{
-    echo('Файл не найден!');
+    echo("\n Файл не найден!");
 }
 ?>
