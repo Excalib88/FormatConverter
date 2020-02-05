@@ -14,7 +14,8 @@ namespace FormatConverter.Core.Services.Render
 {
     public class OpenXmlRenderService: IRenderService
     {
-        public async Task<byte[]> Render(PrintFormModel printFormModel, TemplateFile templateFile)
+        public async Task<byte[]> Render(PrintFormModel printFormModel, TemplateFile templateFile,
+            bool isNeedConvertToPdf = false)
         {
             if (!Directory.Exists("temp"))
             {

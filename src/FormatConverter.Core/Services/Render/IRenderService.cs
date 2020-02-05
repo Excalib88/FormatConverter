@@ -6,6 +6,6 @@ namespace FormatConverter.Core.Services.Render
 {
     public interface IRenderService
     {
-        Task<byte[]> Render(PrintFormModel printFormModel, TemplateFile templateFile);
+        Task<byte[]> Render(PrintFormModel printFormModel, TemplateFile templateFile, bool isNeedConvertToPdf = false);
     }
 }

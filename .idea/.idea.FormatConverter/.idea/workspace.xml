@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f27e6a-6325-4250-83ce-6c839d60afdc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/phpword/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FormatConverter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/TemplateResult.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/TemplateResult.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/phpword/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/phpword/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,15 +109,15 @@
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/TemplateService.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/SyncfusionLicenseProvider.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/FusionLicenseProvider.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Program.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/ConverterController.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Utils/FileHelper.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Controllers/TemplateController.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" />
-        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/IRenderService.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/OpenXMLRenderService.cs" />
         <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/DocPdfConverter.cs" />
+        <option value="$PROJECT_DIR$/src/FormatConverter.Core/Services/Render/SyncfusionRenderService.cs" />
       </list>
     </option>
   </component>
@@ -262,7 +254,7 @@
       <workItem from="1580707998624" duration="14925000" />
       <workItem from="1580818727733" duration="2062000" />
       <workItem from="1580838951644" duration="1260000" />
-      <workItem from="1580884854335" duration="3406000" />
+      <workItem from="1580884854335" duration="4996000" />
     </task>
     <servers />
   </component>

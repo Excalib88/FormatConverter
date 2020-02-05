@@ -27,7 +27,7 @@ namespace FormatConverter.Core.Services
             _templateService = templateService;
             _renderService = renderService;
         }
-        
+
         public async Task<File> Convert(PrintFormModel printFormModel)
         {
             var template = await _dbRepository
@@ -37,7 +37,7 @@ namespace FormatConverter.Core.Services
                            ?? await _templateService.Create(printFormModel.Template);
 
             var renderedFile = await _renderService.Render(printFormModel, template);
-            var targetFileName = FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
+            var targetFileName = printFormModel.Template.FullName;
             var file =  new File
             {
                 Type = FileType.Converted,
