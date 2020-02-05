@@ -37,7 +37,7 @@ namespace FormatConverter.Core.Services
                            ?? await _templateService.Create(printFormModel.Template);
 
             var renderedFile = await _renderService.Render(printFormModel, template);
-            var targetFileName = printFormModel.Template.FullName;//FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
+            var targetFileName = FileHelper.ChangeFileExtension(printFormModel.Template.FullName);
             var file =  new File
             {
                 Type = FileType.Converted,

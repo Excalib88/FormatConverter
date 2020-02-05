@@ -9,7 +9,7 @@ if($method != "POST") {
     echo('Некорректный запрос!');
     return;
 }
-class Dictionary{
+class Dictionary {
     public $Key;
     public $Value;
 }
@@ -26,9 +26,7 @@ foreach($dictArray as $dict) {
 
 $templateProcessor->saveAs('templateResult.docx');
 
-shell_exec('sudo unoconv -f pdf template312312.docx');
-
-$attachment_location = $_SERVER["DOCUMENT_ROOT"] . '\template312312.docx';
+$attachment_location = $_SERVER["DOCUMENT_ROOT"] . '/templateResult.docx';
 
 
 if (file_exists($attachment_location)) {

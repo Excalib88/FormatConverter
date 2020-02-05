@@ -46,14 +46,14 @@ namespace FormatConverter.Api
             });
             
             services.AddSqLiteDatabase(_configuration);
-            services.AddScoped<IRenderService, OpenXmlRenderService>(); //SyncfusionRenderService
+            services.AddScoped<IRenderService, SyncfusionRenderService>(); //SyncfusionRenderService
             services.AddScoped<IDocPdfConverter, DocPdfConverter>();
             services.AddScoped<ITemplateService, TemplateService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
-            //serviceProvider.GetService<DataContext>().Database.Migrate();    
+            SyncfusionLicenseProvider.RegisterLicense("MjA1OTY4QDMxMzcyZTM0MmUzMFNsVUNTQm5SUlI5ZlV2M2t3Tk50NTgrSTA4V0dkYVNBM0trR0d5KzllZmM9");
             app.UseRouting();
             app.UseAuthorization();
             

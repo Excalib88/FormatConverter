@@ -128,7 +128,8 @@
         </e>
       </e>
     </e>
-    <e p="C:\Users\rave9\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\rave9\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_FormatConverter.-1907964627.00" t="ExcludeRecursive" />
+    <e p="C:\Users\dmansurov\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\dmansurov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\dmansurov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_FormatConverter.-1907964627.00" t="ExcludeRecursive" />
   </component>
 </project>
